@@ -6,8 +6,9 @@ Simple python script to a console script to keep your computer from going to sle
 
 ##### Install the wheels (optional)
 ```
+pip install wheel
 cd stay-awake/wheels
-pip install *
+python -m pip install <wheel> --user  # they have to be install in the right order
 ```
 
 ##### Install the package
