@@ -10,12 +10,10 @@ def stay_awake(interval):
 
     logging.info("Staying awake.")
     while True:
+        keyboard.press(Key.pause)        
+        keyboard.release(Key.pause)
+        logging.debug("The pause key was pressed.")
         time.sleep(interval)
-        keyboard.press(Key.shift)
-        time.sleep(0.1)
-        keyboard.release(Key.shift)
-        logging.debug("The shift key was pressed.")
-
 
 def main():
     parser = argparse.ArgumentParser(description='Process some integers.')
