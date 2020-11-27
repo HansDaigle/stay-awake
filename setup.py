@@ -28,7 +28,7 @@ setup(
     ],
     packages=find_packages(where='stay_awake'),
     python_requires='>=3.6, <4',
-    install_requires=['pynput'],
+    install_requires=['pynput>=1.7.1,<2.0.0'],
     entry_points={  # Optional
         'console_scripts': [
             'stay-awake=stay_awake.__main__:main',

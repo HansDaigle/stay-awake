@@ -2,20 +2,33 @@
 
 Simple python script to a console script to keep your computer from going to sleep.
 
-###How-to
+### Install
+
+##### Install the wheels (optional)
+```
+cd stay-awake/wheels
+pip install *
+```
+
+##### Install the package
+```
+cd stay-awake
+pip install .
+```
+
+### How-to use
 
 ```bash
+stay-awake <args>
+
 stay-awake --help
 ```
 
-You can also run the script as a backgroup process:
+Run the script as a backgroup process:
 ```
 stay-awake <args> &
 
--> [1] 24474    # this is the pid id
-```
+-> [1] 24474    # pid is will be returned
 
-To kill the process:
-```
-kill <pid id>
+kill <pid id>   # to stop it
 ```
