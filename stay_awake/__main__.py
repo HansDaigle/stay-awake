@@ -12,6 +12,8 @@ def stay_awake(interval):
     while True:
         time.sleep(interval)
         keyboard.press(Key.shift)
+        time.sleep(0.1)
+        keyboard.release(Key.shift)
         logging.debug("The shift key was pressed.")
 
 
